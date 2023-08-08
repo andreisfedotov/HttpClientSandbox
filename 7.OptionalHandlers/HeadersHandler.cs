@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace HttpClientFactoryExample;
+namespace OptionalHandlers;
 
 internal class HeadersHandler : DelegatingHandler
 {

@@ -4,3 +4,4 @@
     var result = await client.GetAsync("https://api.chucknorris.io/jokes/random");
     Console.WriteLine($"{i + 1}: {result.StatusCode}");
 }
+

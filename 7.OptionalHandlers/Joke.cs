@@ -1,4 +1,4 @@
-﻿namespace HttpClientFactoryExample;
+﻿namespace OptionalHandlers;
 
 public class Joke
 {

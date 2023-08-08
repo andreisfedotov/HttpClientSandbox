@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>_4.HttpClientFactory_Named</RootNamespace>
+    <RootNamespace>_6.HttpClientFactory_Typed</RootNamespace>
   </PropertyGroup>
 
 </Project>

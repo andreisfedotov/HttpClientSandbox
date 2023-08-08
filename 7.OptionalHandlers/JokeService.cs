@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace HttpClientFactoryExample;
+namespace OptionalHandlers;
 
 internal class JokeService
 {

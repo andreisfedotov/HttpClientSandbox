@@ -1,6 +1,6 @@
-﻿using HttpClientFactoryExample;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OptionalHandlers;
 
 var builder = Host.CreateApplicationBuilder(args);
 ConfigureServices(builder.Services);

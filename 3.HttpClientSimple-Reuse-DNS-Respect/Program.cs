@@ -1,6 +1,10 @@
 ﻿internal class Program
 {
-    private static readonly HttpClient _httpClient = new(new HttpClientHandler());
+    private static readonly HttpClient _httpClient = new(new SocketsHttpHandler
+    {
+        PooledConnectionIdleTimeout = TimeSpan.FromMinutes(1)
+    });
+
     private static async Task Main()
     {
         for (int i = 0; i < 5; i++)
@@ -10,3 +14,4 @@
         }
     }
 }
+

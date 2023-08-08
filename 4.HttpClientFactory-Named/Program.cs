@@ -5,9 +5,12 @@ builder.Services.AddHttpClient("Joke", httpClient =>
 {
     httpClient.BaseAddress = new Uri("https://api.chucknorris.io/");
 });
+
+#region Configuration
 var app = builder.Build();
 
 JsonSerializerOptions options = new() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+#endregion
 
 app.MapGet("/", async (IHttpClientFactory httpClientFactory) =>
 {
@@ -26,3 +29,4 @@ class Joke
 {
     public string? Value { get; set; }
 }
+
