@@ -2,7 +2,7 @@
 {
     private static readonly HttpClient _httpClient = new(new SocketsHttpHandler
     {
-        PooledConnectionIdleTimeout = TimeSpan.FromMinutes(1)
+        PooledConnectionLifetime = TimeSpan.FromMinutes(1)
     });
 
     private static async Task Main()
